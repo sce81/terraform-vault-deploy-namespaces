@@ -1,7 +1,7 @@
 output "namespace" {
-    value = vault_namespace.main.path
+  value = vault_namespace.main.path
 }
 
 output "child_namespaces" {
-    value = vault_namespace.children[*].*
+  value = vault_namespace.children[*].*
 }
